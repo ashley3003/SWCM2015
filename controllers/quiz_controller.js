@@ -1,4 +1,4 @@
-// GET /quizes/question
+/*// GET /quizes/question
 exports.question = function(req, res){
 res.render( 'quizes/question', {pregunta: 'Capital. de Italia'});
 };
@@ -9,4 +9,21 @@ exports.answer = function(req, res) {
 	} else {
 	res.render('quizes/answer', {respuesta: 'Incorrecto'});
 	}
+}; */
+var models = require( '../models/modets.js');
+// GET /quizes/question
+exports.question = function(req, res) {
+	models.Quiz.findAll().success(function(quiz) {
+	res.render('quizes/question', { pregunta: quiz[ø].pregunta});
+    })
+};
+// GET /quizes/answer
+exports.answer = function(req, res) {
+   models.Quiz.findAll().success(function(quiz) {
+	if (req.query.respuesta === quiz[0].respuesta) {
+		res.render( 'quizes/answer', { respuesta: 'Correcto' });
+} else {
+	res.render('quizes/answer', { respuesta: ‘Incorrecto’});
+}
+})
 };
