@@ -1,0 +1,79 @@
+/*
+	Estilo CSS para el documento.
+*/
+body
+{
+	background-color: 	#00FFFF;
+	color: 				black;
+	font-family:		"Tahoma", sans-serif;
+	font-size:			xx-small;
+	}
+p
+{
+	background-color: 	#00FFFF;
+	color: 				blue;
+	font-family:		"Tahoma", sans-serif;
+	font-size:			xx-small;
+	display: block;
+	}
+ul
+{
+list-style-type: none;
+margin: 0px;
+padding: 0px;
+border-left-width: 1px;
+border-left-style: solid;
+border-left-color: #CCC;
+}
+li
+{
+display: inline
+}
+a{
+font—family: Anal, Helvetica, sans—serif;
+color: #000;
+text—decoration: none;
+font—size: 0.9cm;
+display: block;
+padding: 6px;
+float: left;
+border-bottom-width: ipx;
+border—bottom—style: solid;
+border—bottom—color: #CCC;
+background-color: #CCCC00;
+border-top-width: ipx;
+border—top—style: solid;
+border—top—color: #CCC;
+border-right-width: ipx;
+border-right—style: solid;
+border—right—color: #CCC;
+}
+a:hover{
+color: #FFF;
+background-color: #666;
+}
+.clear{
+clear:both;
+}
+footer {
+            background-color: #FFF;
+            width: 50%;
+            bottom: 0;
+            position: absolute;
+}
+table
+{
+	background-color: 	white;
+	color: 				black;
+	font-family:		"Tahoma", sans-serif;
+	font-size:			x-small;
+	width:				60%;
+}
+th
+{
+	font-weight:		bolder;
+	text-align:			left;
+	vertical-align:		top;
+	background-color:	#E8E8E8;
+	padding-left:		3px;
+}
